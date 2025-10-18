@@ -7,5 +7,5 @@ export function signToken(userId){
 }
 
 export function verifyToken(token) {
-    return jet.verify(token, process.env.JWT_SECRET);
+    return jwt.verify(token, process.env.JWT_SECRET);
 }
